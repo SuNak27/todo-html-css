@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Alfad Sabil Haq">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do App</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <h1 class="navbar-brand">To Do App</h1>
+            <!-- Menu -->
+            <ul class="navbar-menu">
+                <li class="menu-link"><a href="#add">Add Todo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="card">
+            <h2 class="card-title">Add Todo</h2>
+            <div class="card-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="todo">Todo</label>
+                        <input type="text" name="todo" id="todo" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="todo">Date</label>
+                        <input type="date" name="date" id="date" class="form-control">
+                    </div>
+
+                    <!-- Button -->
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Main -->
+    <main class="container-list">
+        <div class="card">
+            <h2 class="card-title">List</h2>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Todo</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Belajar HTML</td>
+                            <td>2021-10-10</td>
+                            <td>
+                                <span class="badge badge-warning">Edit</span>
+                                <span class="badge badge-danger">Delete</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Belajar CSS</td>
+                            <td>2021-10-10</td>
+                            <td>
+                                <span class="badge badge-warning">Edit</span>
+                                <span class="badge badge-danger">Delete</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Belajar JavaScript</td>
+                            <td>2021-10-10</td>
+                            <td>
+                                <span class="badge badge-warning">Edit</span>
+                                <span class="badge badge-danger">Delete</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>
